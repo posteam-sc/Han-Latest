@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d3037a271bb74db894e17218ae3ded9b" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="MainModel.Adjustment" Width="1.5" PointX="2.75" PointY="1.5" />
+        <EntityTypeShape EntityType="MainModel.AdjustmentType" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="MainModel.APICredential" Width="1.5" PointX="0.75" PointY="9.5" />
+        <EntityTypeShape EntityType="MainModel.AttachGiftForTransaction" Width="1.5" PointX="8.75" PointY="5.5" />
+        <EntityTypeShape EntityType="MainModel.Authorize" Width="1.5" PointX="10.75" PointY="5.5" />
+        <EntityTypeShape EntityType="MainModel.Brand" Width="1.5" PointX="3.75" PointY="42.25" />
+        <EntityTypeShape EntityType="MainModel.City" Width="1.5" PointX="3.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MainModel.ConsignmentCounter" Width="1.5" PointX="3.75" PointY="48.25" />
+        <EntityTypeShape EntityType="MainModel.ConsignmentSettlement" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="MainModel.ConsignmentSettlementDetail" Width="1.5" PointX="10.75" PointY="8.5" />
+        <EntityTypeShape EntityType="MainModel.Counter" Width="1.5" PointX="6" PointY="13.875" />
+        <EntityTypeShape EntityType="MainModel.Currency" Width="1.5" PointX="9" PointY="40.875" />
+        <EntityTypeShape EntityType="MainModel.Customer" Width="1.5" PointX="6" PointY="6.375" />
+        <EntityTypeShape EntityType="MainModel.CustomerLevelRevokeHistory" Width="1.5" PointX="0.75" PointY="12.5" />
+        <EntityTypeShape EntityType="MainModel.DailyRecord" Width="1.5" PointX="8.25" PointY="9.625" />
+        <EntityTypeShape EntityType="MainModel.DeleteLog" Width="1.5" PointX="13.5" PointY="29" />
+        <EntityTypeShape EntityType="MainModel.ExchangeRateForTransaction" Width="1.5" PointX="13.5" PointY="33.5" />
+        <EntityTypeShape EntityType="MainModel.Expense" Width="1.5" PointX="5.25" PointY="23.625" />
+        <EntityTypeShape EntityType="MainModel.ExpenseCategory" Width="1.5" PointX="3" PointY="23.75" />
+        <EntityTypeShape EntityType="MainModel.ExpenseDetail" Width="1.5" PointX="7.5" PointY="17.5" />
+        <EntityTypeShape EntityType="MainModel.GiftCard" Width="1.5" PointX="9" PointY="44" />
+        <EntityTypeShape EntityType="MainModel.GiftCard_Point" Width="1.5" PointX="10.75" PointY="11.5" />
+        <EntityTypeShape EntityType="MainModel.GiftCardInTransaction" Width="1.5" PointX="16.5" PointY="25.625" />
+        <EntityTypeShape EntityType="MainModel.ImportExportLog" Width="1.5" PointX="8.75" PointY="1.875" />
+        <EntityTypeShape EntityType="MainModel.ImportExportLogDetail" Width="1.5" PointX="11" PointY="1.75" />
+        <EntityTypeShape EntityType="MainModel.MainPurchase" Width="1.5" PointX="6" PointY="57.375" />
+        <EntityTypeShape EntityType="MainModel.MemberCardRule" Width="1.5" PointX="5.25" PointY="33.625" />
+        <EntityTypeShape EntityType="MainModel.MemberType" Width="1.5" PointX="3.75" PointY="9.5" />
+        <EntityTypeShape EntityType="MainModel.PaymentMethod" Width="1.5" PointX="2.75" PointY="13.5" />
+        <EntityTypeShape EntityType="MainModel.PaymentType" Width="1.5" PointX="9" PointY="14.5" />
+        <EntityTypeShape EntityType="MainModel.Point_History" Width="1.5" PointX="17.25" PointY="20.875" />
+        <EntityTypeShape EntityType="MainModel.PointDeductionPercentage_History" Width="1.5" PointX="12.75" PointY="5.5" />
+        <EntityTypeShape EntityType="MainModel.Product" Width="1.5" PointX="6" PointY="42.25" />
+        <EntityTypeShape EntityType="MainModel.ProductCategory" Width="1.5" PointX="3.75" PointY="54.125" />
+        <EntityTypeShape EntityType="MainModel.ProductPriceChange" Width="1.5" PointX="8.25" PointY="25.375" />
+        <EntityTypeShape EntityType="MainModel.ProductQuantityChange" Width="1.5" PointX="8.25" PointY="33.375" />
+        <EntityTypeShape EntityType="MainModel.ProductSubCategory" Width="1.5" PointX="3.75" PointY="38.875" />
+        <EntityTypeShape EntityType="MainModel.Promotion" Width="1.5" PointX="11" PointY="22" />
+        <EntityTypeShape EntityType="MainModel.PurchaseDeleteLog" Width="1.5" PointX="8.25" PointY="29" />
+        <EntityTypeShape EntityType="MainModel.PurchaseDetail" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="MainModel.PurchaseDetailInTransaction" Width="1.5" PointX="24.75" PointY="29.25" />
+        <EntityTypeShape EntityType="MainModel.RedeemPoint_History" Width="1.5" PointX="8.25" PointY="21.125" />
+        <EntityTypeShape EntityType="MainModel.ReferralPointInTransaction" Width="1.5" PointX="16.5" PointY="29" />
+        <EntityTypeShape EntityType="MainModel.ReferralProgram" Width="1.5" PointX="6" PointY="38.375" />
+        <EntityTypeShape EntityType="MainModel.RoleManagement" Width="1.5" PointX="3" PointY="34.75" />
+        <EntityTypeShape EntityType="MainModel.Setting" Width="1.5" PointX="12.75" PointY="9.5" />
+        <EntityTypeShape EntityType="MainModel.Shop" Width="1.5" PointX="9" PointY="36.75" />
+        <EntityTypeShape EntityType="MainModel.SPDetail" Width="1.5" PointX="21.75" PointY="29.125" />
+        <EntityTypeShape EntityType="MainModel.StockFillingFromSAP" Width="1.5" PointX="8.25" PointY="50.75" />
+        <EntityTypeShape EntityType="MainModel.StockInDetail" Width="1.5" PointX="13.5" PointY="25.5" />
+        <EntityTypeShape EntityType="MainModel.StockInHeader" Width="1.5" PointX="5.25" PointY="28.375" />
+        <EntityTypeShape EntityType="MainModel.StockTransaction" Width="1.5" PointX="8.25" PointY="54.875" />
+        <EntityTypeShape EntityType="MainModel.Supplier" Width="1.5" PointX="3.75" PointY="58.75" />
+        <EntityTypeShape EntityType="MainModel.Tax" Width="1.5" PointX="3.75" PointY="45.5" />
+        <EntityTypeShape EntityType="MainModel.Townshipdb" Width="1.5" PointX="12.75" PointY="12.5" />
+        <EntityTypeShape EntityType="MainModel.Transaction" Width="1.5" PointX="11.25" PointY="25.625" />
+        <EntityTypeShape EntityType="MainModel.TransactionDetail" Width="1.5" PointX="19.5" PointY="27.875" />
+        <EntityTypeShape EntityType="MainModel.TransactionPaymentDetail" Width="1.5" PointX="13.75" PointY="1.5" />
+        <EntityTypeShape EntityType="MainModel.Unit" Width="1.5" PointX="3.75" PointY="51.625" />
+        <EntityTypeShape EntityType="MainModel.UnitConversion" Width="1.5" PointX="14.75" PointY="4.5" />
+        <EntityTypeShape EntityType="MainModel.UsePrePaidDebt" Width="1.5" PointX="16.5" PointY="33.125" />
+        <EntityTypeShape EntityType="MainModel.User" Width="1.5" PointX="3" PointY="27.25" />
+        <EntityTypeShape EntityType="MainModel.UserRole" Width="1.5" PointX="0.75" PointY="31.125" />
+        <EntityTypeShape EntityType="MainModel.VipCustomer" Width="1.5" PointX="14.75" PointY="9.5" />
+        <EntityTypeShape EntityType="MainModel.WrapperItem" Width="1.5" PointX="8.25" PointY="48" />
+        <AssociationConnector Association="MainModel.FK_Product_Brand" />
+        <AssociationConnector Association="MainModel.FK_Promotion_Brand" />
+        <AssociationConnector Association="MainModel.FK_ReferralProgram_Brand" />
+        <AssociationConnector Association="MainModel.FK_Customer_City" />
+        <AssociationConnector Association="MainModel.FK_Shop_City" />
+        <AssociationConnector Association="MainModel.FK_Product_ConsignmentCounter" />
+        <AssociationConnector Association="MainModel.FK_ConsignmentSettlement_ConsignmentSettlement" />
+        <AssociationConnector Association="MainModel.FK_DailyRecord_Counter" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_Counter" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDeleteLog_Counter" />
+        <AssociationConnector Association="MainModel.FK_RedeemPoint_History_Counter" />
+        <AssociationConnector Association="MainModel.FK_Transaction_Counter" />
+        <AssociationConnector Association="MainModel.FK_UsePrePaidDebt_Counter" />
+        <AssociationConnector Association="MainModel.FK_ExchangeRateForTransaction_Currency" />
+        <AssociationConnector Association="MainModel.FK_Transaction_Currency" />
+        <AssociationConnector Association="MainModel.FK_Customer_MemberType" />
+        <AssociationConnector Association="MainModel.FK_GiftCard_Customer" />
+        <AssociationConnector Association="MainModel.FK_RedeemPoint_History_Customer" />
+        <AssociationConnector Association="MainModel.FK_ReferralPointInTransaction_Customer" />
+        <AssociationConnector Association="MainModel.FK_Transaction_Customer" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_Transaction" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_TransactionDetail" />
+        <AssociationConnector Association="MainModel.FK_DeleteLog_User" />
+        <AssociationConnector Association="MainModel.FK_ExchangeRateForTransaction_Transaction" />
+        <AssociationConnector Association="MainModel.FK_Expense_ExpenseCategory" />
+        <AssociationConnector Association="MainModel.FK_Expense_User" />
+        <AssociationConnector Association="MainModel.FK_ExpenseDetail_Expense" />
+        <AssociationConnector Association="MainModel.FK_GiftCardInCustomer_GiftCard" />
+        <AssociationConnector Association="MainModel.FK_Transaction_GiftCard" />
+        <AssociationConnector Association="MainModel.FK_GiftCardInCustomer_GiftCardInCustomer" />
+        <AssociationConnector Association="MainModel.FK_ImportExportLogDetail_ImportExportLog" />
+        <AssociationConnector Association="MainModel.FK_MainPurchase_Supplier" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDeleteLog_MainPurchase" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDetail_MainPurchase" />
+        <AssociationConnector Association="MainModel.FK_MemberCardRule_MemberType" />
+        <AssociationConnector Association="MainModel.FK_MemberCardRule_User" />
+        <AssociationConnector Association="MainModel.FK_MemberCardRule_User1" />
+        <AssociationConnector Association="MainModel.FK_Promotion_MemberType" />
+        <AssociationConnector Association="MainModel.FK_Transaction_MemberType" />
+        <AssociationConnector Association="MainModel.FK_Transaction_PaymentType" />
+        <AssociationConnector Association="MainModel.FK_Point_History_Point_History" />
+        <AssociationConnector Association="MainModel.FK_ReferralPointInTransaction_Point_History" />
+        <AssociationConnector Association="MainModel.FK_TransactionDetail_Point_History" />
+        <AssociationConnector Association="MainModel.FK_Product_ProductCategory" />
+        <AssociationConnector Association="MainModel.FK_Product_ProductType" />
+        <AssociationConnector Association="MainModel.FK_Product_Tax" />
+        <AssociationConnector Association="MainModel.FK_Product_Unit" />
+        <AssociationConnector Association="MainModel.FK_ProductPriceChange_Product" />
+        <AssociationConnector Association="MainModel.FK_ProductQuantityChange_Product" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDetail_Product" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDetailInTransaction_Product" />
+        <AssociationConnector Association="MainModel.FK_SPDetail_Product" />
+        <AssociationConnector Association="MainModel.FK_SPDetail_Product1" />
+        <AssociationConnector Association="MainModel.FK_StockFillingFromSAP_Product" />
+        <AssociationConnector Association="MainModel.FK_StockInDetail_Product" />
+        <AssociationConnector Association="MainModel.FK_StockTransaction_Product" />
+        <AssociationConnector Association="MainModel.FK_TransactionDetail_Product" />
+        <AssociationConnector Association="MainModel.FK_WrapperItem_Product" />
+        <AssociationConnector Association="MainModel.FK_WrapperItem_Product1" />
+        <AssociationConnector Association="MainModel.FK_ProductSubCategory_ProductCategory" />
+        <AssociationConnector Association="MainModel.FK_ProductPriceChange_User" />
+        <AssociationConnector Association="MainModel.FK_ProductQuantityChange_User" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDeleteLog_PurchaseDetail" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDeleteLog_User" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDetailInTransaction_PurchaseDetail" />
+        <AssociationConnector Association="MainModel.FK_PurchaseDetailInTransaction_TransactionDetail" />
+        <AssociationConnector Association="MainModel.FK_RedeemPoint_History_User" />
+        <AssociationConnector Association="MainModel.FK_ReferralPointInTransaction_Transaction" />
+        <AssociationConnector Association="MainModel.FK_ReferralPointInTransaction_User" />
+        <AssociationConnector Association="MainModel.FK_RoleManagement_UserRole" />
+        <AssociationConnector Association="MainModel.FK_StockInHeader_Shop" />
+        <AssociationConnector Association="MainModel.FK_StockInHeader_Shop1" />
+        <AssociationConnector Association="MainModel.FK_transaction_Shop" />
+        <AssociationConnector Association="MainModel.FK_SPDetail_TransactionDetail" />
+        <AssociationConnector Association="MainModel.FK_StockInDetail_StockInHeader" />
+        <AssociationConnector Association="MainModel.FK_StockInHeader_User" />
+        <AssociationConnector Association="MainModel.FK_StockInHeader_User1" />
+        <AssociationConnector Association="MainModel.FK_Transaction_Transaction" />
+        <AssociationConnector Association="MainModel.FK_Transaction_User" />
+        <AssociationConnector Association="MainModel.FK_TransactionDetail_Transaction" />
+        <AssociationConnector Association="MainModel.FK_UsePrePaidDebt_Transaction" />
+        <AssociationConnector Association="MainModel.FK_UsePrePaidDebt_Transaction1" />
+        <AssociationConnector Association="MainModel.FK_UsePrePaidDebt_User" />
+        <AssociationConnector Association="MainModel.FK_User_User" />
+        <AssociationConnector Association="MainModel.FK_User_User1" />
+        <AssociationConnector Association="MainModel.FK_User_UserRole" />
+        <EntityTypeShape EntityType="MainModel.CouponCode" Width="1.5" PointX="11.375" PointY="14.75" />
+        <EntityTypeShape EntityType="MainModel.ExportMemberTransLog" Width="1.5" PointX="13.375" PointY="14.75" />
+        <EntityTypeShape EntityType="MainModel.ImportExportMemberTransLog" Width="1.5" PointX="15.375" PointY="13.75" />
+        <EntityTypeShape EntityType="MainModel.ImportExportMemberTransLogDetail" Width="1.5" PointX="17.625" PointY="13.625" />
+        <AssociationConnector Association="MainModel.FK_ImportExportMemberTransLogDetail_ImportExportMemberTransLog" />
+        <EntityTypeShape EntityType="MainModel.APIKeyCredential" Width="1.5" PointX="16.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

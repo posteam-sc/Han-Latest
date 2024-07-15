@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://STJCRSPOSAPP/wsSSI" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://STJCRSPOSAPP/wsSSI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://STJCRSPOSAPP/wsSSI">
+      <s:element name="ws_SSI_SendDataRQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParamData" type="tns:Parameters" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Parameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Application_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_01" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_02" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_03" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeStamp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Columns" type="tns:ArrayOfTransactions" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTransactions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Transactions" nillable="true" type="tns:Transactions" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Transactions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Col_01" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_02" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_03" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_04" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_05" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_06" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_07" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_08" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_09" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_10" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_11" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_12" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_13" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_14" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_15" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_16" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_17" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_18" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_19" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Col_20" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ws_SSI_SendDataRQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ws_SSI_SendDataRQResult" type="tns:ws_SSI_SendDataRS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ws_SSI_SendDataRS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatus" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RecordsReceived" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RecordsImported" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDetails" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DefectiveRowNos" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="wsSSIAuthentication" type="tns:wsSSIAuthentication" />
+      <s:complexType name="wsSSIAuthentication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="applicationKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="encryptedKey" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ws_SSI_SendDataRQSoapIn">
+    <wsdl:part name="parameters" element="tns:ws_SSI_SendDataRQ" />
+  </wsdl:message>
+  <wsdl:message name="ws_SSI_SendDataRQSoapOut">
+    <wsdl:part name="parameters" element="tns:ws_SSI_SendDataRQResponse" />
+  </wsdl:message>
+  <wsdl:message name="ws_SSI_SendDataRQwsSSIAuthentication">
+    <wsdl:part name="wsSSIAuthentication" element="tns:wsSSIAuthentication" />
+  </wsdl:message>
+  <wsdl:portType name="wsSSIWebServiceSoap">
+    <wsdl:operation name="ws_SSI_SendDataRQ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Send Transaction Data to SSI</wsdl:documentation>
+      <wsdl:input message="tns:ws_SSI_SendDataRQSoapIn" />
+      <wsdl:output message="tns:ws_SSI_SendDataRQSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsSSIWebServiceSoap" type="tns:wsSSIWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ws_SSI_SendDataRQ">
+      <soap:operation soapAction="https://STJCRSPOSAPP/wsSSI/ws_SSI_SendDataRQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ws_SSI_SendDataRQwsSSIAuthentication" part="wsSSIAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSSIWebServiceSoap12" type="tns:wsSSIWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ws_SSI_SendDataRQ">
+      <soap12:operation soapAction="https://STJCRSPOSAPP/wsSSI/ws_SSI_SendDataRQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ws_SSI_SendDataRQwsSSIAuthentication" part="wsSSIAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsSSIWebService">
+    <wsdl:port name="wsSSIWebServiceSoap" binding="tns:wsSSIWebServiceSoap">
+      <soap:address location="https://jc-dc.junctionv-aap.com/wsSSI/wsSSIWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsSSIWebServiceSoap12" binding="tns:wsSSIWebServiceSoap12">
+      <soap12:address location="https://jc-dc.junctionv-aap.com/wsSSI/wsSSIWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

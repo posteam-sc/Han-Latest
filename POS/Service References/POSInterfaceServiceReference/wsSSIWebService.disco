@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://jc-dc.junctionv-aap.com/wsSSI/wsSSIWebService.asmx?wsdl" docRef="https://jc-dc.junctionv-aap.com/wsSSI/wsSSIWebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://jc-dc.junctionv-aap.com/wsSSI/wsSSIWebService.asmx" xmlns:q1="https://STJCRSPOSAPP/wsSSI" binding="q1:wsSSIWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://jc-dc.junctionv-aap.com/wsSSI/wsSSIWebService.asmx" xmlns:q2="https://STJCRSPOSAPP/wsSSI" binding="q2:wsSSIWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
